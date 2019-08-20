@@ -1,0 +1,162 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+body,#app {
+  width: 100%;
+  height: 100%;
+  background: #f4f2f7;
+}
+/*左侧导航栏*/
+#menuLeftNav{
+  height: 100%;
+  width:100%;
+}
+#menuLeftNav ul{
+  height: 100%;
+}
+#menuLeftNav .el-menu-item{
+  float: left;
+  width: 80px;
+  height: 80px;
+  padding:0px;
+  margin:10px auto 0px;
+  text-align:center;
+  background-color: white;
+}
+#menuLeftNav .el-menu-item i{
+  text-align: center;
+  width: 70px;
+  height: 55px;
+  display:block;
+  margin:0 auto;
+  padding:0px;
+  /*background:url(../images/menu_icon.png) no-repeat;*/
+}
+
+/*个人中心*/
+#menuLeftNav>ul>.el-menu-item>.el-icon-profile{
+  background-position: 0px 5px;
+}
+#menuLeftNav>ul>.el-menu-item.is-active>.el-icon-profile{
+  background-position: 0px -67px;
+}
+/*交互*/
+#menuLeftNav>ul>.el-menu-item>.el-icon-interact{
+  background-position: 0px -137px;
+}
+#menuLeftNav>ul>.el-menu-item.is-active>.el-icon-interact{
+  background-position: 0px -204px;
+}
+/*知识库*/
+#menuLeftNav>ul>.el-menu-item>.el-icon-kbp{
+  background-position: 0px -556px;
+}
+#menuLeftNav>ul>.el-menu-item.is-active>.el-icon-kbp{
+  background-position: 0px -626px;
+}
+/*电子工单*/
+#menuLeftNav>ul>.el-menu-item>.el-icon-ets{
+  background-position: 0px -416px;
+}
+#menuLeftNav>ul>.el-menu-item.is-active>.el-icon-ets{
+  background-position: 0px -486px;
+}
+/*服务历史*/
+#menuLeftNav>ul>.el-menu-item>.el-icon-history{
+  background-position: 0px -698px;
+}
+#menuLeftNav>ul>.el-menu-item.is-active>.el-icon-history{
+  background-position: 0px -762px;
+}
+
+.interaction{
+	width: 42%;
+	height: 100%;
+	background-color: white;
+	float: left;
+	border-radius: 15px;
+	padding: 5px;
+}
+.bussiness{
+	width: 57%;
+	height: 100%;
+	background-color: white;
+	float: right;
+	border-radius: 15px;
+	padding: 10px;
+}
+.publicBgColor{
+  width:100%;
+  height:100%;
+  background:white;
+  padding:10px;
+  border-radius:10px;
+}
+
+/* 每一个模块背景色 */
+.normalize-panel-color{
+  background:#f5f6fa;
+}
+.el-main, .el-header, .el-footer{
+  text-align:left;
+  padding:0px;
+}
+#history .el-tabs--top .el-tabs__content{
+  height:calc(100% - 40px);
+}
+#history .el-tabs--top .el-tabs__content .el-tab-pane{
+  height:100%;
+}
+/* table表格 */
+.el-table__body tbody tr{
+  height:50px;
+}
+.el-table td, .el-table th{
+  padding:5px 0px;
+}
+/* modal模态框 */
+.modal_diaLog .el-dialog--center{
+  height:75%;
+}
+.el-dialog__header{
+  background:#B50029;
+  text-align:left;
+  padding:15px 20px;
+}
+.el-dialog__header .el-dialog__title{
+  color:white;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/* 滚动条 */
+.el-scrollbar__wrap {
+  overflow-x: auto;
+}
+.default-scrollbar .is-vertical .el-scrollbar__thumb{
+  background-color: #b50029 !important;
+}
+
+/*滚动条的宽度*/
+::-webkit-scrollbar{
+  width: 6px;
+  height: 10px;
+}
+::-ms-scrollbar{
+  width: 6px;
+  height: 10px;
+}
+/*滚动条的滑块*/
+::-webkit-scrollbar-thumb{
+  background-color: #b50029 !important;
+  border-radius: 3px;
+}
+::-ms-scrollbar-thumb{
+  background-color: #b50029 !important;
+  border-radius: 3px;
+}
+
