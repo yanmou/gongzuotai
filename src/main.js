@@ -48,8 +48,12 @@ window.onmessage = function (messageEvent) {
   }
   if (message.type == 'EndSession') {
     console.log('EndSession')
-    store.commit('EndSessionFun', true)    
-    // router.push('/begin')
+    if (store.state.EndSession == true) {
+      store.commit('EndSessionFun', false)    
+    } else {
+      store.commit('EndSessionFun', true)    
+    }
+    router.push('/begin')
   }
 }
 

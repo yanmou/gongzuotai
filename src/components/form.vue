@@ -57,6 +57,10 @@ export default {
       show: true
     }
   },
+  beforeRouteLeave (to, from, next) {
+    this.form = ''
+    next()
+  },  
   computed: {
     isFtransferShow () {
       return this.$store.state.finished
