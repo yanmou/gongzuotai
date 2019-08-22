@@ -53,6 +53,8 @@ window.onmessage = function (messageEvent) {
     } else {
       store.commit('EndSessionFun', true)    
     }
+    localStorage.setItem('ICRQA', '')
+    localStorage.setItem('PLAF', '')
     router.push('/begin')
   }
 }

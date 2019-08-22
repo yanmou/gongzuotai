@@ -143,6 +143,8 @@ export default {
     },
   },
   mounted () {
+    localStorage.setItem('ICRQA', '')
+    localStorage.setItem('PLAF', '')
     // this.getDataPhoto()
     // this.getInfo()
     this.$store.commit('heightLightFun', 'one')
