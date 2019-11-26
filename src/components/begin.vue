@@ -7,6 +7,7 @@
     <el-col :span=12 class="center">
       <div class="papers-photo">
         <img :src = frontUrl alt="">
+        
         <!-- <img src = '../assets/frontPhoto.png' alt=""> -->
       </div>
     </el-col>
